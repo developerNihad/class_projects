@@ -1,6 +1,5 @@
 import json
 
-# Load existing expenses from file
 def load_expenses():
     try:
         with open("expenses.json", "r") as file:
@@ -8,12 +7,12 @@ def load_expenses():
     except FileNotFoundError:
         return []
 
-# Save expenses to file
+
 def save_expenses():
     with open("expenses.json", "w") as file:
         json.dump(expenses, file, indent=4)
 
-# Add an expense
+
 def add_expense():
     date = input("Enter date (YYYY-MM-DD): ")
     amount = float(input("Enter amount: "))
@@ -25,7 +24,7 @@ def add_expense():
     save_expenses()
     print("Expense added successfully!\n")
 
-# List all expenses
+
 def list_expenses():
     if not expenses:
         print("No expenses recorded yet.")
@@ -33,7 +32,7 @@ def list_expenses():
         for i, expense in enumerate(expenses, 1):
             print(f"{i}. {expense['date']} - {expense['category']} - ${expense['amount']} ({expense['description']})")
 
-# Main menu
+
 def main():
     while True:
         print("\nPersonal Expense Tracker")
@@ -52,6 +51,6 @@ def main():
         else:
             print("Invalid option, please try again.")
 
-# Run the program
+
 expenses = load_expenses()
 main()
