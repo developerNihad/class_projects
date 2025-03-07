@@ -4,5 +4,11 @@
         "amount": 1000.0,
         "category": "electronics",
         "description": "best"
+    },
+    {
+        "date": "2025-03-7",
+        "amount": 1500.0,
+        "category": "industry",
+        "description": "best choice"
     }
 ]
