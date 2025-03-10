@@ -10,5 +10,23 @@
         "amount": 1500.0,
         "category": "industry",
         "description": "best choice"
+    },
+    {
+        "date": "2025-03-10",
+        "amount": 1500.0,
+        "category": "pc",
+        "description": "the best"
+    },
+    {
+        "date": "2023",
+        "amount": 2000.0,
+        "category": "mouse",
+        "description": "best"
+    },
+    {
+        "date": "2024-12-14",
+        "amount": 1300.0,
+        "category": "maps",
+        "description": "best maps in here"
     }
 ]
